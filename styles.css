@@ -397,11 +397,11 @@ h1 {
     margin-top: 1em;
 }
 
-p {
+.text-section p {
     font: 1.125rem var(--system-ui);
     font-weight: 600;
     color: #000000;
-    width: min(100%, 550px);
+    width: min(100%, 530px);
     margin-top: 1.5em;
 }
 
@@ -420,23 +420,25 @@ p {
     background: #F9FAFB;
 }
 
-.right-container .text-section {
+.right-container .text-section,
+.right-container .form-controls {
     padding-left: 32px;
 }
 
 .right-container .form-controls {
     background-color: #FFFFFF;
-    padding: 16px 32px;
+    padding-bottom: 32px;
+    padding-top: 1px;
     box-shadow: 0px 2px 5px -2px rgb(164, 164, 164);
 }
 
-form > div {
+.form-controls > div {
     display: flex;
     margin-top: 16px;
     gap: 48px;
 }
 
-form > div > div {
+.form-controls > div > div {
     display: flex;
     flex-direction: column;
     gap: 0.125rem;
@@ -450,4 +452,25 @@ label {
 input {
     border: 1px solid #E5E7EB;
     border-radius: 2px;
+}
+
+.form-section button,
+.form-section > div:last-of-type {
+    margin-left: 32px;
+}
+
+.form-section button {
+    margin-top: 32px;
+    margin-bottom: 32px;
+    padding: 0.75em 2.5em;
+    border-radius: 10px;
+    color: #FFFFFF;
+    border: none;
+    background: #596D48;
+    box-shadow: 1px 1px 8px rgb(181, 181, 181);
+}
+
+.form-section > div:last-of-type > span {
+    color: #596D48;
+    font-weight: 700;
 }
